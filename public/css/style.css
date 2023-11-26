@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+:root {
+  --color-primary: #35ccce;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.header,
+.main {
+  width: 1200px;
+  max-width: 100%;
+  margin: 60px auto 120px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 10%;
+  position: relative;
+}
+
+.header__logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.header__sreach {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border: 1px solid var(--color-primary);
+}
+
+.header__sreach input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 0px 30px;
+}
+.header__sreach button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.header__sreach i {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 30px;
+  margin: 5px;
+
+  cursor: pointer;
+}
+
+.todo {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 1px solid var(--color-primary);
+}
+
+.todo p {
+  width: 100%;
+  padding: 20px 30px;
+  outline: none;
+  border: none;
+}
+
+.todo__options {
+  display: flex;
+}
+
+.todo__options i {
+  margin: 0px 20px;
+  font-size: 30px;
+  color: var(--color-primary);
+}
+
+@media only screen and (max-width: 500px) {
+  #app {
+    width: 400x;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .header .header__sreach {
+    width: 100%;
+  }
+
+  .header .header__logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .header .header__logo img {
+    display: block;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #app {
+    width: 400x;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .header .header__sreach {
+    width: 100%;
+  }
+
+  .header .header__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .header .header__logo img {
+    margin-right: 10px;
+  }
+}

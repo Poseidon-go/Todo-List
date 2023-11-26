@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo-List</title>
+  <!-- box icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="header__logo">
+        <img src="/public/images/it.png" alt="">
+      </div>
+      <form id="todoForm" class="header__sreach">
+        <input id="todo-search" name="todoText" type="text" placeholder="Add Todo-List">
+        <button type="submit"><i class='bx bx-plus add'></i></button>
+        <button type="submit"><i class='bx bx-search search'></i></button>
+      </form>
+    </header>
+
+    <div class="main">
+      <ul id="todoList">
+
+      </ul>
+    </div>
+    <!-- template Todo Card -->
+    <template id="todoTemplate">
+      <div class="todo">
+        <p></p>
+        <div class="todo__options">
+          <a href="#"><i class='bx bx-edit edit'></i></a>
+          <a href="#"><i class='bx bx-trash remove'></i></a>
+        </div>
+      </div>
+    </template>
+
+  </div>
+  <script type="module" src="./public/js/main.js"></script>
+</body>
+
+</html>
